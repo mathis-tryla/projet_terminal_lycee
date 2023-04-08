@@ -1,0 +1,1091 @@
+<html>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Informatique Facile</title>
+<head>
+	<link href="icone-ordinateur.png" rel="icon" type="image/png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<!-- Partie HTML -->
+
+<!-- div pour afficher sommaire -->
+
+<div id="sommaire">
+
+  <h1 class="sommaire_INFORMATIQUE"><div id="informatiqueFacile">INFORMATIQUE</div></h1>
+
+  <br>
+
+  <h1 class="sommaire_FACILE"><div id="informatiqueFacile">FACILE</div></h1>
+
+  <br><br><br><br><br>
+
+  <center><p class="texteIntro"><i><b>"L'informatique, ça fait gagner beaucoup de temps... à condition d'en avoir beaucoup devant soi !"<br> - <br>Donc si vous voulez gagner du temps à utiliser un ordinateur, passez du temps sur ce site !</b></i></p></center>
+
+  <br><hr style="text-align: center; width: 90%;"><br>
+
+  <h2 class="h2_sommaire">SOMMAIRE</h2>
+
+  <div id="tableauTâches">
+  		<table id="tableauTâches_bordures">
+  			<tr>
+  				<th id="titre_tableau_bases" class="titresTableau">BASES</th>
+  				<th id="titre_tableau_mail" class="titresTableau">MAIL</th>
+  				<th id="titre_tableau_internet" class="titresTableau">INTERNET</th>
+  			</tr>
+  			<center><tr id="espace_logo">
+  				<td class="td_icones" id="td_icone_bases" align="center"><img src="images/iconeBases.png" class="icone_Bases" style="width: 20%;"/></td>
+  				<td class="td_icones" id="td_icone_mail" align="center"><img src="images/iconeMail.png" class="icone_Mail" style="width: 25%;"/></td>
+  				<td class="td_icones" id="td_icone_internet" align="center"><img src="images/firefox.png" class="icone_Internet" style="width: 15%;"/></td>
+  			</tr></center>
+  			<tr>
+  				<td id="tâches" align="center" class="tâches_bases"><span class="mettreEnPoliceTaches" id="OuvrirlaBibliothèque" onclick="onAfficheOuvrirBibliothèque()">Ouvrir la bibliothèque</span></td>
+  				<td id="tâches" align="center" class="tâches_mail"><span class="mettreEnPoliceTaches" id="NaviguerGmail" onclick="onAfficheNaviguerGmail()">Aller sur une boîte Gmail</span></td>
+  				<td id="tâches" align="center" class="tâches_internet"><span class="mettreEnPoliceTaches" id="RechercheGoogle" onclick="onAfficheEffectuerRechercheGoogle()">Effectuer une recherche avec Google</span></td>
+  			</tr>
+  			<tr>
+  				<td id="tâches" align="center" class="tâches_bases"><span class="mettreEnPoliceTaches" id="Changerlefonddécran" onclick="onAfficheChangerFondEcran()">Changer le fond d'écran</span></td>
+  				<td id="tâches" align="center" class="tâches_mail"><span class="mettreEnPoliceTaches" id="CréerAdresseMail" onclick="onAfficheCréerAdresseMail()">Créer une adresse mail</span></td>
+  				<td id="tâches" align="center" class="tâches_internet"><span class="mettreEnPoliceTaches" id="MettreFavoris" onclick="onAfficheMettreEnFavoris()">Mettre en favoris</span></td>
+  			</tr>
+  			<tr>
+  				<td id="tâches" align="center" class="tâches_bases"><span class="mettreEnPoliceTaches" id="Supprimerunélèment" onclick="onAfficheSupprimerElement()">Supprimer un élèment</span></td>
+  			</tr>
+  			<tr>
+  				<td id="tâches" align="center" class="tâches_bases"><span class="mettreEnPoliceTaches" id="Augmenterleson" onclick="onAfficheAugmenterSon()">Augmenter le son</span></td>
+  			</tr>
+  		</table>
+  </div>
+
+  <div id="tableauSommaire">
+          <table id="tableauCompétences_bordures">
+              <tr>
+                  <th>Compétences</th>
+                  <th>Acquis</th>
+              </tr>
+              <tr>
+                  <td id="capable_de_accéderBibliothèque">Être capable d'accéder à la Bibliothèque</td>
+                  <td height="60" width="60" id="checkVert_accéderBibliothèque"></td>
+              </tr>
+              <tr>
+                  <td id="savoirChangerFondEcran">Savoir changer le fond d'écran</td>
+                  <td height="60" width="60" id="checkVert_changerFondEcran"></td>
+              </tr>
+              <tr>
+                  <td id="choisirSupprimerElement">Prendre la décision de supprimer un élément sans avoir peur</td>
+                  <td height="60" width="60" id="checkVert_supprimerElement"></td>
+              </tr>
+              <tr>
+                  <td id="pouvoirAugmenterSon">Pouvoir augmenter le son</td>
+                  <td height="60" width="60" id="checkVert_augmenterSon"></td>
+              </tr>
+              <tr>
+              	<tr>
+                  <td id="savoirManierGmail0">Accéder à sa boîte Gmail</td>
+                  <td height="60" width="60" id="checkVert_naviguerGmail0"></td>
+                </tr>
+                <tr>
+                  <td id="savoirManierGmail1">Pouvoir écrire un mail</td>
+                  <td height="60" width="60" id="checkVert_naviguerGmail1"></td>
+                </tr>
+                <tr>
+                  <td id="savoirManierGmail2">Savoir envoyer un mail</td>
+                  <td height="60" width="60" id="checkVert_naviguerGmail2"></td>
+              	</tr>
+              </tr>
+              <tr>
+                  <td id="capable_de_créerAdresseMail">Être capable de créer une adresse mail</td>
+                  <td height="60" width="60" id="checkVert_créerAdresseMail"></td>
+              </tr>
+              <tr>
+                  <td id="savoirSurferWeb">Savoir surfer sur le web avec Google</td>
+                  <td height="60" width="60" id="checkVert_rechercheGoogle"></td>
+              </tr>
+              <tr>
+                  <td id="pouvoirMettreFavoris">Pouvoir mettre en favoris vos sites préférés</td>
+                  <td height="60" width="60" id="checkVert_mettreFavoris"></td>
+              </tr>
+          </table>
+  </div>
+
+  	<img src="images/gifBRAVO.gif" id="gif_Bravo"/>
+  	<img src="images/gif-felicitation.gif" id="gif_Félicitations"/>
+
+  <br><br>
+
+  	<input type="button" value="Je pense avoir consulté.e toutes les tâches proposées" id="bouton_ToutTerminé_Sommaire" onclick="afficherLesGifsDeFelicitations()" />
+
+</div>
+
+
+<!-- div pour afficher OuvrirBibliothèque -->
+
+<div id="charger_OuvrirBibliothèque">
+
+
+  <center><h1>Ouvrir la Bibliothèque</h1></center>
+
+  <br>
+  <img src="images/icone-maison-verte.png" id="revenirAuSommaire" title="Page d'Accueil" onclick="revenir_sommaire_via_ouvrirBibliothèque()" width="5%" />
+  <br><br>
+
+
+  <h2 class="h2_question_bibliotheque">A quoi sert la Bibliothèque ?</h2>
+  	<p class="texteExplicatif">
+  		Nous allons apprendre à ouvrir la <b class="gras">Bibliothèque</b>. La Bibliothèque regroupe tous les <b class="gras">dossiers</b> que vous avez créés vous-même ou ceux existant déjà par défaut lors du premier démarrage de votre ordinateur. Selon le type de dossier choisi, il existe plusieurs types de <b class="gras">documents</b> qui y sont enregistrés. Par exemple dans le dossier <b class="gras">Musique</b>, sont enregistrés des <b class="gras">fichiers audios</b>.
+  	</p><br>
+
+  <h2 class="h2_question_bibliotheque">Comment y accéder ?</h2>
+  	<h3 class="étape_ouvrirBibliothèque">1ère étape:</h3><p class="texteExplicatif">Il faut commencer par chercher l'icône qui correspond à la bibliothèque. Il se trouve dans la <b class="gras">barre de tâches</b>: c'est-à-dire la barre horizontale en bas de votre écran. La bibliothèque est représentée par un icône comme celui-ci: <img src="image_icone_bibliotheque.jpeg" id="icone_bibliotheque" width="2%"/></p>
+  	<h3 class="étape_ouvrirBibliothèque">2ème étape:</h3><p class="texteExplicatif">Une fois trouvé, il ne vous restera plus qu'à cliquer une fois dessus et une fenêtre affichant tous les dossiers apparaîtra.</p>
+
+
+
+  <br><br><br>
+
+  <h2 class="h2_video"><u>Voici un résumé en vidéo:</u></h2><br>
+
+  <video controls width="60%">
+   	<source src="Bibliotheque.mp4" type="video/mp4"/>
+   </video>
+
+  <br><br><br>
+
+  <h2 class="h2_consigne"><u>Consignes de l'exercice:</u></h2>
+
+  	<p class="texteExplicatif"><i>Voici un petit exercice pour savoir repérer l'emplacement des dossiers. Pour cela, pourquoi pas chercher où se trouvent les photos prises lors de votre week-end passé avec les petits-enfants ? Pour vous aider, ces photos ont été enregistrées dans le dossier Images. A vous de le retrouver ci-dessous, en tenant compte des indications et de la vidéo présentés ci-dessus! Bonne chance! &#9786; </i></p><br>
+
+  <center><span id="zoneAffichageMondeVirtuel">
+  	<div id="map1Bureau">
+  		<img usemap="#maMap" src="map1_Bureau.png" alt="Photo du Bureau principal" id="map1_Bureau"/>
+  			<map id="maMap">
+  				<area shape="rect" coords="438,573,463,595" id="zone_aCliquerPourAfficherBibliothèque" onclick="afficherBibliothèque()"/>
+  			</map>
+  	</div>
+
+  	<div id="map2Bureau">
+  		<img usemap="#maMap2" src="bibliothèqueAffichee.png" alt="Photo du dossier Images affiché" id="map2_Bureau"/>
+  			<map id="maMap2">
+  				<area shape="rect" coords="405,230,483,261" id="zone_aCliquerPourAfficherDossierImages" onclick="afficherDossierImages()"/>
+  			</map>
+  	</div>
+  </span></center><br>
+
+  <input type="button" id="recommencerExercices" class="boutonsBasDePages" value="Recommencer l'exercice"/>
+
+  <input type="button" id="ouvrirBibliothèque_accomplie" class="boutonsBasDePages" value="J'ai lu l'ensemble du tutoriel, je passe à la suite" onclick="revenir_sommaire_via_bouton_ouvrirBibliothèque()"/>
+
+</div>
+
+
+<!-- div pour afficher ChangerFondDEcran -->
+
+<div id="charger_ChangerFondEcran">
+
+
+  <center><h1>Changer votre fond d'écran</h1></center>
+
+  <br>
+  <img src="images/icone-maison-verte.png" id="revenirAuSommaire" title="Page d'Accueil" onclick="revenir_sommaire_via_changerFondEcran()" width="5%" />
+  <br><br>
+
+
+  <h2 class="h2_question_ecran">Qu'est-ce que le fond d'écran ?</h2>
+  	<p class="texteExplicatif">
+  		L'arrière plan de votre page d'accueil ou <b class="gras">fond d'écran</b>, est <b class="gras">personnalisable</b> et permet de rendre plus agréable le temps passé sur le <b class="gras">Bureau</b>. Vous pouvez prendre une image que vous avez enregistrée dans la bibliothèque (<i>voir tutoriel: <span id="redirectionVersOuvrirBibliothèque_via_changerFondEcran" onclick="redirectionVersOuvrirBibliothèqueViaChangerFondEcran()">comment accéder à la bibliothèque</span></i>) pour la définir en tant que fond d'écran, ou bien vous pouvez choisir les fonds d'écrans installés par défaut sur votre ordinateur.
+  	</p><br>
+
+  <h2 class="h2_question_ecran">Comment changer le fond d'écran ?</h2>
+      <h3 class="étape_changerFondEcran">1ère étape:</h3><p class="texteExplicatif">Commencez par cliquer sur le symbole qui se situe en bas à gauche de votre écran. Il renvoie à l'accueil : <img src="image_icone_accueil.png" id="icone0_accueil" width="2%"/></p><br>
+      <h3 class="étape_changerFondEcran">2ème étape:</h3><p class="texteExplicatif">Puis allez dans les paramètres grâce à ce bouton ci qui se trouve en bas à gauche de votre écran, et au-dessus du symbole accueil : <img src="image_icone_paramètre0.png" id="icone0_paramètre0" width="2%"/></p><br>
+      <h3 class="étape_changerFondEcran">3ème étape:</h3><p class="texteExplicatif">Apparaît alors la fenêtre des paramètres. Une fois apparue, cliquez sur l'onglet <i>Personnalisation</i> comme représenté ici :<br><br> <img src="image_icone_paramètre1.png" id="icone0_paramètre1" width="20%"/></p><br>
+      <h3 class="étape_changerFondEcran">4ème étape:</h3><p class="texteExplicatif">Le contenu du menu <i>Personnalisation</i> déroule alors, cliquez maintenant sur l'onglet <i>Arrière-plan</i> :<br><br> <img src="image_icone_paramètre2.png" id="icone0_paramètre2" width="15%"/></p><br>
+      <h3 class="étape_changerFondEcran">5ème étape:</h3><p class="texteExplicatif">Enfin, se présentent à vous plusieurs possibilités: soit vous choisissez parmi les 5 fonds d'écrans installés par défaut, soit vous allez dans <i>Parcourir</i> pour aller rechercher des photos personnelles.</p>
+
+
+
+  <br><br><br>
+
+  <h2 class="h2_video"><u>Voici un résumé en vidéo:</u></h2><br>
+
+  <video controls width="60%">
+   	<source src="fondEcransMieux.mp4" type="video/mp4"/>
+   </video>
+
+  <br><br><br>
+
+  <h2 class="h2_consigne"><u>Consignes de l'exercice:</u></h2>
+
+  	<p class="texteExplicatif"><i>Voici un petit exercice pour changer le fond d'écran d'un ordinateur. Pour cela, pourquoi pas définir un fond d'écran doux ? Je vous propose de définir le fond d'écran de cet ordinateur par l'image représentant une tente verte installée à la pleine étoile, en tenant compte des indications et de la vidéo présentés ci-dessus. Pour vous aider, ce fond d'écran se trouve directement parmi les 5 arrières-plans (ou fonds d'écrans) installés par défaut. Bonne chance! &#9786; </i></p><br>
+
+  <center><span id="zoneAffichageMondeVirtuel">
+  	<div id="map0Bureau">
+  		<img usemap="#maMap0" src="map1_Bureau.png" alt="Photo du Bureau principal" id="map0_Bureau"/>
+  			<map id="maMap0">
+  				<area shape="rect" coords="0,570,34,600" id="zone_aCliquerPourAfficherAccueil" onclick="afficherAccueil()"/>
+  			</map>
+
+  	</div>
+
+  	<div id="map3Bureau">
+  		<img usemap="#maMap3" src="accueilAffiche.png" alt="Photo du l'accueil affiché" id="map3_Bureau"/>
+  			<map id="maMap3">
+  				<area shape="rect" coords="11,505,29,519" id="zone_aCliquerPourAfficherParamètre1" onclick="afficherParamètre1()"/>
+  			</map>
+  	</div>
+
+    <div id="map4Bureau">
+  		<img usemap="#maMap4" src="paramètre1Affiche.png" alt="Photo des paramètres1 affiché" id="map4_Bureau"/>
+  			<map id="maMap4">
+  				<area shape="rect" coords="48,319,336,360" id="zone_aCliquerPourAfficherParamètre2" onclick="afficherParamètre2()"/>
+  			</map>
+  	</div>
+
+    <div id="map5Bureau">
+  		<img usemap="#maMap5" src="paramètre2Affiche.png" alt="Photo des paramètres2 affiché" id="map5_Bureau"/>
+  			<map id="maMap5">
+  				<area shape="rect" coords="57,186,165,203" id="zone_aCliquerPourAfficherParamètre3" onclick="afficherParamètre3()"/>
+  			</map>
+  	</div>
+
+    <div id="map6Bureau">
+  		<img usemap="#maMap6" src="paramètre3Affiche.png" alt="Photo des paramètres3 affiché" id="map6_Bureau"/>
+  			<map id="maMap6">
+  				<area shape="rect" coords="352,322,420,395" id="zone_aCliquerPourAfficherParamètre4" onclick="afficherParamètre4()"/>
+  			</map>
+  	</div>
+  </span></center><br>
+
+	<input type="button" id="recommencerExercices" class="boutonsBasDePages" value="Recommencer l'exercice" onclick="RecommencerExercices_ChangerFondDEcran()"/>
+
+	<input type="button" id="changerFondEcran_accomplie" class="boutonsBasDePages" value="J'ai lu l'ensemble du tutoriel, je passe à la suite" onclick="revenir_sommaire_via_bouton_changerFondEcran()"/>
+
+</div>
+
+
+<!-- div pour afficher SupprimerUnElement -->
+
+<div id="charger_SupprimerUnElement">
+
+    <center><h1>Supprimer un élément</h1></center>
+
+    <br>
+    <img src="images/icone-maison-verte.png" id="revenirAuSommaire" title="Page d'Accueil" onclick="revenir_sommaire_via_supprimerElement()" width="5%" />
+    <br><br>
+
+    <h2 class="h2_question_suppr">Pourquoi supprimer un élément ?</h2>
+        <p class="texteExplicatif">Si l'on veut supprimer un élèment ou <b class="gras">fichier</b>, cela signifie que ce fichier provient de la <b class="gras">bibliothèque</b> (<i>voir tutoriel: <span id="redirectionVersOuvrirBibliothèque_via_supprimerElement" onclick="redirectionVersOuvrirBibliothèqueViaSupprimerElement()">afficher la bibliothèque</i>). Par exemple, vous voulez "gagner" de l'espace de stockage sur votre ordinateur, et que vous avez des fichiers dont vous n'en trouvez plus l'utilité, il faut alors <b class="gras">supprimer</b> ce fichier.</p><br>
+
+    <h2 class="h2_question_suppr">Comment supprimer un élèment ?</h2>
+        <h3 class="étape_supprimerElement">1ère étape:</h3><p class="texteExplicatif">Ouvrez la bibliothèque et allez chercher le fichier que vous voulez supprimer. Pour rappel, l'icône de la bibliothèque est celui-ci: <img src="image_icone_bibliotheque.jpeg" id="icone_bibliotheque" width="2%"/></p><br>
+        <h3 class="étape_supprimerElement">2ème étape:</h3><p class="texteExplicatif">Puis cliquez sur le dossier dans lequel est enregistré votre fichier ou photo.</p><br>
+        <h3 class="étape_supprimerElement">3ème étape:</h3><p class="texteExplicatif">Ensuite appuyez sur la partie droite de votre souris (c'est ce qui s'appelle <b class="gras">faire un clique droit</b>). Effectuez le en vous positionnant sur le fichier à supprimer. La fenêtre du clique droit est comme ci-contre. Une fois affichée, cliquez sur <i>Supprimer</i>: <br><br><img src='cliqueDroit.png' id='clique_droit' width='13%'/></p><br>
+        <h3 class="étape_supprimerElement">4ème étape:</h3><p class="texteExplicatif">Enfin, il faut <b class="gras">vider la corbeille</b>, c'est-à-dire l'endroit dans lequel tous les fichiers "supprimés" seront stockés. Et oui, quand vous supprimez un fichier il ne l'est pas définitivement: il ne l'est qu'une fois la corbeille vidée. Pour cela, effectuez un clique droit en vous positionnant sur la corbeille située sur le Bureau, et cliquez sur <i>Vider la corbeille</i> comme ci-dessous: <br><br><img src='cliqueDroit_viderCorbeille.png' id='viderCorbeille' width='15%'/></p>
+
+
+    <br><br><br>
+
+    <h2 class="h2_video"><u>Voici un résumé en vidéo:</u></h2><br>
+
+    <video controls width="60%">
+   	<source src="supprimerFichier.mp4" type="video/mp4"/>
+   	<source src="supprimerFichier.oggtheora.ogv" type="video/ogv">
+   </video>
+
+    <br><br>
+
+    <h2 class="h2_consigne"><u>Consignes de l'exercice:</u></h2>
+
+        <p class='texteExplicatif'><i>Maintenant que vous avez un ordinateur et un téléphone portable, le document que vous avez rédigé faisant office de comparatif de portables ne vous sert plus à rien. Pourquoi pas le supprimer en tenant compte des indications et de la vidéo présentés ci-dessus? Pour vous aider, ce fichier se trouve dans le dossier Documents. Bonne chance ! &#9786; </i></p>
+
+
+    <br><br>
+
+    <center><span id="zoneAffichageMondeVirtuel">
+        <div id="map9Bureau">
+            <img usemap="#maMap9" src="map1_Bureau.png" alt="Photo du Bureau principal" id="map9_Bureau"/>
+            <map id="maMap9">
+                <area shape="rect" coords="438,573,463,595" id="zone_aCliquerPourBibliothèque_supprimerelement" onclick="afficherBibliothèque_supprimer_élèment()"/>
+            </map>
+        </div>
+
+        <div id="map10Bureau">
+            <img usemap="#maMap10" src="bibliothèqueAffichee.png" alt="Photo de la Bibliothèque" id="map10_Bureau"/>
+            <map id="maMap10">
+                <area shape="rect" coords="591,188,683,219" id="zone_aCliquerPourDossierDocuments_supprimerelement" onclick="afficherDossierDocuments_supprimer_élèment()"/>
+            </map>
+        </div>
+
+        <div id="map11Bureau">
+            <img usemap="#maMap11" src="dossierDocumentsAffiche.png" alt="Photo de l'intérieur dossier Documents" id="map11_Bureau"/>
+            <map id="maMap11">
+                <area shape="rect" coords="265,211,363,224" id="zone_aCliquerPourDocuments" onclick="afficherCliqueDroit_Documents()"/>
+            </map>
+        </div>
+
+        <div id="map12Bureau">
+            <img usemap="#maMap12" src="interieurDossierDocuments_cliqueDroit.png" alt="Photo de l'intérieur dossier Documents" id="map12_Bureau"/>
+            <map id="maMap12">
+                <area shape="rect" coords="264,486,524,502" id="zone_aCliquerPourFermerBibliothèque" onclick="afficherFermerCliqueDroit_Supprimer()"/>
+            </map>
+        </div>
+
+		<div id="map13Bureau">
+            <img usemap="#maMap13" src="fichier_ChoixPortables_supprime.png" alt="Photo du dossier Documents" id="map13_Bureau"/>
+            <map id="maMap13">
+                <area shape="rect" coords="797,4,838,20" id="zone_aCliquerPourAfficherFermerBibliothèque" onclick="afficherFermerBibliothèque()"/>
+            </map>
+        </div>
+
+        <div id="map14Bureau">
+            <img usemap="#maMap14" src="map14_Bureau.png" alt="Photo du Bureau avec Corbeille pleine" id="map14_Bureau"/>
+            <map id="maMap14">
+                <area shape="rect" coords="10,9,72,67" id="zone_aCliquerPourAfficherViderCorbeille" onclick="afficherOuvrirViderLaCorbeille()"/>
+            </map>
+        </div>
+
+        <div id="map15Bureau">
+            <img usemap="#maMap15" src="viderLaCorbeille.png" alt="Photo du Bureau avec Vider la Corbeille" id="map15_Bureau"/>
+            <map id="maMap15">
+                <area shape="rect" coords="39,76,284,91" id="zone_aCliquerPourAfficherVoulezVousViderCorbeille" onclick="afficherOuvrirQuestionConfirmationsSuppression_Corbeille()"/>
+            </map>
+        </div>
+
+		<div id="map16Bureau">
+            <img usemap="#maMap16" src="confirmation_SupprimerFichierOuNon.png" alt="Photo du bureau avec voulez-vous vider la corbeille" id="map16_Bureau"/>
+            <map id="maMap16">
+                <area shape="rect" coords="530,356,603,378" id="zone_aCliquerPourAfficherCorbeilleVidee" onclick="afficherBureauMap16()"/>
+            </map>
+        </div>
+    </span></center><br>
+
+    <input type="button" id="recommencerExercices" class="boutonsBasDePages" value="Recommencer l'exercice" onclick="RecommencerExercices_SupprimerElements()"/>
+
+    <input type="button" id="supprimerElement_accomplie" class="boutonsBasDePages" value="J'ai lu l'ensemble du tutoriel, je passe à la suite" onclick="revenir_sommaire_via_bouton_supprimerElement()"/>
+</div>
+
+<!-- div pour afficher AugmenterLeSon -->
+
+<div id="charger_AugmenterLeSon">
+
+   <center><h1>Augmenter le Son</h1></center>
+
+   <br>
+   <img src="images/icone-maison-verte.png" id="revenirAuSommaire" title="Page d'Accueil" onclick="revenir_sommaire_via_augmenterSon()" width="5%"/>
+   <br><br>
+
+   <h2 class="h2_question_aug">Comment augmenter le son ?</h2>
+    <h3 class="étape_augmenterSon">1ère étape:</h3><p class="texteExplicatif">Tout d'abord, commencez par chercher cet icône du son qui se situe en bas à droite de votre écran dans la <b class="gras">barre des tâches</b>: <img src="image_icone_son.png" id="icone_son" width="3%"/></p><br>
+    <h3 class="étape_augmenterSon">2ème étape:</h3><p class="texteExplicatif">Une fois trouvé, analysez la situation. S'il y a une <b class="gras">croix</b> à côté de cet icône présenté ci-dessus, cela signifie que le son est <b class="gras">coupé</b>. Sinon, si cette croix n'est <b class="gras">pas affichée</b> cela signifie que votre son est <b class="gras">activé</b> selon un certain volume.</p><br>
+    <h3 class="étape_augmenterSon">3ème étape:</h3><p class="texteExplicatif">Enfin, pour règler le volume comme vous le voulez, maintenez la touche <i>fn</i> et celle qui correspond au volume sur votre clavier.</p>
+
+
+   <br><br><br>
+
+   <h2 class="h2_video"><u>Voici un résumé en vidéo:</u></h2><br>
+
+   <video controls width="60%">
+   	<source src="augmenterSonOk.mp4" type="video/mp4"/>
+   </video>
+
+   <br><br><br>
+
+   <center><input type="button" id="augmenterSon_accomplie" class="boutonsBasDePages" value="J'ai lu l'ensemble du tutoriel, je passe à la suite" onclick="revenir_sommaire_via_bouton_augmenterSon()"/></center>
+
+</div>
+
+<!-- div pour afficher navigation Gmail -->
+
+<div id="charger_navigationGmail">
+
+   <center><h1>Naviguer dans une boîte Gmail</h1></center>
+
+   <br>
+   <img src="images/icone-maison-verte.png" id="revenirAuSommaire" title="Page d'Accueil" onclick="revenir_sommaire_via_navigationGmail()" width="5%"/>
+   <br><br>
+
+   <h2 class="h2_question_gmail">Comment rechercher Gmail sur Internet ?</h2>
+   	<h3 class="étape_naviguerGmail">1ère étape:</h3><p class="texteExplicatif">En effet, comme vous avez pu le voir avec le titre, pour accéder à sa <b class="gras">boîte mail</b> il faut <b class="gras">effectuer une recherche sur Internet</b> en utilisant un <b class="gras">moteur de recherche</b>. Un moteur de recherche ou <b class="gras">navigateur</b> vous permet d'aller sur Internet pour effectuer une quelconque recherche. Il existe plusieurs navigateurs. Leurs logos auquels on les associe vous sont affichés pour les plus connus ci-dessous :</p><br>
+    <center><img src="firefox.png" id="logo_Firefox" alt="Logo Firefox" width="5%"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="chrome.png" id="logo_Chrome" alt="Logo Chrome" width="5%"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="edge.png" id="logo_Edge" alt="Logo Microsoft Edge" width="5%"/></center><br><p class="texteExplicatif">Le premier correspond à <b class="gras">Mozilla Firefox</b>, le second <b class="gras">Google Chrome</b>, et le troisième <b class="gras">Microsoft Edge</b>. Cliquez donc sur un de ces navigateurs.</p><br>
+    <h3 class="étape_naviguerGmail">2ème étape:</h3><p class="texteExplicatif">Tous les mails sont accessibles via des <b class="gras">messageries</b> dont la plus connue est <b class="gras">Gmail</b>. La <b class="gras">barre de recherche</b> qui va s'afficher au centre de l'écran, est l'endroit où il faut taper les <b class="gras">recherches</b> que l'on veut effectuer. Cliquez sur cette barre puis taper grâce à votre clavier "gmail".</p>
+
+
+   <br><br><br>
+
+   <h2 class="h2_video"><u>Voici un résumé en vidéo:</u></h2><br>
+
+   <video controls width="60%">
+   	<source src="rechercheGoogleBofMaisOK.mp4" type="video/mp4"/>
+   </video>
+
+   <br><br><hr><br>
+
+
+
+   <h2 class="h2_question_gmail">Comment écrire des mails ?</h2>
+   <h3 class="étape_naviguerGmail">1ère étape:</h3><p class="texteExplicatif">Pour commencer à écrire un mail, il faut d'abord être connecté à son compte Gmail (comme expliqué précédemment). Puis cliquez sur <b class="gras">NOUVEAU MESSAGE</b>: cela est écrit en blanc dans un cadre rouge sur Gmail comme ci-contre: <img src="NOUVEAUMESSAGE.png" id="nouveauMessage" width="8%"/></p><br>
+   <h3 class="étape_naviguerGmail">2ème étape:</h3><p class="texteExplicatif">Une fenêtre va alors s'afficher en bas à droite de votre écran comme celle-là:
+   <center><img src="fenêtre_EcrireMail.png" id="fenêtreGmail" width="30%"/></center></p>
+
+   <br><p class="texteExplicatif">Trois zones sont alors délimitées dans cette fenêtre: la première dans laquelle il faut rentrer le <b class="gras">destinataire</b> du mail. La deuxième est facultative et permet d'entrer un <b class="gras">objet</b> au mail. Enfin la troisième la plus grande est la zone dans laquelle le contenu du mail va être écrit.</p><br>
+   <h3 class="étape_naviguerGmail">3ème étape:</h3><p class="texteExplicatif">La case du destinataire et celle du contenu du mail sont <b class="gras">obligatoirement</b> écrites. Une fois ces deux cases remplies, appuyez sur la case en bleue <b class="gras">ENVOYER</b>.</p><br>
+
+   <br>
+
+   <h2 class="h2_question_gmail">Où consulter ses mails ?</h2>
+   <p class="texteExplicatif">Une fois connecté(e) à votre compte Gmail, vous verrez apparaître la rubrique <b class="gras">Boîte de réception</b> sur la gauche de votre écran: c'est dans cette rubrique que sont enregistrés les mails que vous avez reçus. Cliquez donc sur cette rubrique pour pouvoir consulter vos mails.</p>
+
+   <p class="texteExplicatif"><u><i>Remarque:</u> lorsque vos mails sont encadrés en blanc c'est que vous n'avez pas encore lu ce mail. En revanche s'ils sont encadrés en gris c'est que vous avez déja consulté le mail.</i></p>
+
+   <br>
+
+   <h2 class="h2_question_gmail">Comment organiser ses mails ?</h2>
+   <p class="texteExplicatif">Pour organiser vos mails, vous pouvez les <b class="gras">trier</b> selon leur contenu. Trois onglets thématiques sont prédéfinis sur Gmail: <i>Principale, Réseaux Sociaux et Promotions</i>. Par exemple, pour déplacer un mail vers l'onglet Réseaux sociaux, vous devez faire un clique droit sur le mail que vous voulez déplacer. Puis cliquez sur <i>Déplacer vers l'onglet</i>: les onglets Réseaux Sociaux et Promotions s'afficheront. Il ne vous restera plus qu'à cliquer sur l'un des deux onglets comme ci-contre:</p><br>
+
+   <center><img src="cliqueDroit_OrganiserMails.png" id="cliquedroit_mailsGmail" alt="Clique droit qui affiche les onglets pour classer les mails" width="20%"/></center>
+
+   <br><br><br><br>
+
+   <h2 class="h2_video"><u>Voici un résumé en vidéo:</u></h2><br>
+
+   <video controls width="60%">
+    <source src="gererMailOK.mp4" type="video/mp4"/>
+   </video>
+
+   <br><br>
+
+   <h2 class="h2_consigne"><u>Consignes de l'exercice:</u></h2>
+    <p class="texteExplicatif"><i>Vous venez de créer votre compte Gmail, et vous venez de recevoir un mail de confirmation de la part de Gmail. Vous désirez le classer dans un onglet et vous considérez qu'il doit être "rangé" dans l'onglet Réseaux sociaux. A vous de trouver cet onglet pour pouvoir y placer le mail de Gmail, en tenant compte des indications et de la vidéo présentés ci-dessus. Bonne chance ! &#9786;</i> </p>
+
+   <br><br><br>
+
+   <center><span id="zoneAffichageMondeVirtuel">
+        <div id="map17Bureau">
+            <img usemap="#maMap17" src="listeMailsAffichee.png" alt="Photo du Bureau Gmail" id="map17_Bureau"/>
+            <map id="maMap17">
+                <area shape="rect" coords="241,238,971,260" id="zone_aCliquerPourCliqueDroit1" onclick="afficher_CliqueDroit1()"/>
+            </map>
+        </div>
+        <div id="map18Bureau">
+            <img usemap="#maMap18" src="cliqueDroit1_DeplacerMail.png" alt="Photo avec clique droit affiché" id="map18_Bureau"/>
+            <map id="maMap18">
+                <area shape="rect" coords="280,250,454,273" id="zone_aCliquerPourVoirCliqueDroit1" onclick="afficher_CliqueDroit2()"/>
+            </map>
+        </div>
+        <div id="map19Bureau">
+            <img usemap="#maMap19" src="cliqueDroit2_DeplacerMail.png" alt="Photo avec deuxième clique droit à effectuer" id="map19_Bureau"/>
+            <map id="maMap19">
+                <area shape="rect" coords="451,262,603,276" id="zone_aCliquerPourVoirCliqueDroit2" onclick="afficher_CliqueDroit3()"/>
+            </map>
+        </div>
+    </span></center><br>
+
+   <input type="button" id="recommencerExercices" class="boutonsBasDePages" value="Recommencer l'exercice"/>
+
+   <input type="button" id="navigationGmail_accomplie" class="boutonsBasDePages" value="J'ai lu l'ensemble du tutoriel, je passe à la suite" onclick="revenir_sommaire_via_bouton_naviguerGmail()"/>
+
+</div>
+
+<!-- div pour afficher créer adresse mail -->
+
+<div id="charger_créerAdresseMail">
+
+	<center><h1>Créer une adresse mail</h1></center>
+
+	<br>
+
+   	<img src="images/icone-maison-verte.png" id="revenirAuSommaire" title="Page d'Accueil" onclick="revenir_sommaire_via_créerAdresseMail()" width="5%"/>
+
+   <br><br>
+
+   <h2 class="h2_question_adresse">Comment créer une adresse mail ?</h2>
+   	<p class="texteExplicatif">Avant d'accéder à ses mails, il faut posséder une <b class="gras">adresse mail</b>. Celle-ci, sous gmail, va se terminer par <i>@gmail.com</i> C'est pour cela qu'après avoir cliqué sur la première réponse de recherche associée à "gmail", une page contenant un <b class="gras">formulaire d'inscription</b> sera affiché pour que vous crééiez votre adresse mail. Une fois le formulaire rempli, votre adresse sera créée. Vous aurez à remplir un formulaire comme ci-dessous :</p><br>
+
+   	<center><img src="formulaireInscription_mail.png" id="formulaire_inscription" width="20%"/></center>
+
+   <br><br><br>
+
+   <h2 class="h2_video"><u>Voici un résumé en vidéo:</u></h2><br>
+
+   <video controls width="60%">
+   	<source src="créerBoîteGmail.mp4" type="video/mp4"/>
+   </video>
+
+   <br><br>
+
+   <input type="button" id="recommencerExercices" class="boutonsBasDePages" value="Recommencer l'exercice"/>
+
+   <input type="button" id="navigationGmail_accomplie" class="boutonsBasDePages" value="J'ai lu l'ensemble du tutoriel, je passe à la suite" onclick="revenir_sommaire_via_bouton_créerAdresseMail()"/>
+
+</div>
+
+<!-- Effectuer une recherche avec Google -->
+
+<div id="faire_UneRechercheGoogle">
+
+	<center><h1>Effectuer une recherche avec Google</h1></center>
+
+	<br><img src="images/icone-maison-verte.png" id="revenirAuSommaire" title="Page d'Accueil" onclick="revenir_sommaire_via_EffectuerRechercheGoogle()" width="5%"/>
+	<br>
+
+	<h2 class="h2_question_google">A quoi sert la recherche Google?</h2>
+	<p class="texteExplicatif">Google est essentiel pour pouvoir trouver des informations, mais pour cela il faut savoir utiliser l'outil google.</p>
+ <h2 class="h2_question_google">Comment faire des recherches sur google?</h2>
+<h3 class="étape_rechercheGoogle">1ère étape:</h3><p class="texteExplicatif">Il faut tout d'abord aller sur votre nagivateur internet. Pour cela appuyer sur le logo <b class="gras">Google chrome</b>comme ceci:<img src="chrome.png" id="icone_bibliotheque" width="3%"/></p><br>
+   <h3 class="étape_rechercheGoogle">2ème étape:</h3><p class="texteExplicatif">Une fois la page internet lancer, cliquer sur la <b class="gras"> barre de recherche</b> et écrivez <b class="gras">Gmail</b>, puis cliquez sur rechercher.</p><p class="texteExplicatif">Plusieurs liens s'afficherons, cliquez sur l'un d'entre eux pour accéder au site que vous voulez.</p>
+
+	<br><br><br><br>
+
+   <h2 class="h2_video"><u>Voici un résumé en vidéo:</u></h2><br>
+
+   <video controls width="60%">
+    <source src="rechercheGoogleBofMaisOK.mp4" type="video/mp4"/>
+   </video>
+
+   <br><br>
+
+	<h2 class="h2_consigne"><u>Consignes de l'exercice:</u></h2>
+
+        <p class='texteExplicatif'><i>Vous désirez consulter vos mails car vous venez de recevoir un mail important: problème vous ne savez pas comment accéder à votre boîte mail. Je vous propose de résoudre ce problème en accédant à votre moteur de recherche afin de taper <b class="gras">Gmail</b> et cliquer sur la première recherche que l'on vous propose; tout en tenant compte des indications et de la vidéo présentés ci-dessus. Bonne chance ! &#9786; </i></p>
+
+   <br><br>
+
+   <center><span id="zoneAffichageMondeVirtuel">
+   		<div id="map20Bureau">
+            <img usemap="#maMap20" src="map1_Bureau.png" alt="Photo du Bureau principal" id="map20_Bureau"/>
+            <map id="maMap20">
+                <area shape="rect" coords="398,570,430,598" id="zone_aCliquerPourAfficherGoogle" onclick="afficherGoogle_map21()"/>
+            </map>
+        </div>
+        <div id="map21Bureau">
+        	<img src="barreHautGoogle.png" id="image_barreRecherche_hautPage"/>
+        	<img src="Google.png" id="logoGoogle"/>
+        	<input type="text" id="barreGoogle_Gmail"/>
+        	<img src="basGoogle.png" id="image_barreIconesBas"/>
+        </div>
+   </span></center><br>
+
+   <input type="button" id="recommencerExercices" class="boutonsBasDePages" value="Recommencer l'exercice"/>
+
+   <input type="button" id="faireRechercheGoogle_accomplie" class="boutonsBasDePages" value="J'ai lu l'ensemble du tutoriel, je passe à la suite" onclick="revenir_sommaire_via_bouton_effectuerRechercheGoogle()"/>
+
+</div>
+
+
+<!-- div pour afficher Mettre en favoris ce que vous voulez garder -->
+
+<div id="mettre_EnFavoris">
+
+ <center><h1>Mettre en Favoris</h1></center>
+
+  <br>
+  <img src="images/icone-maison-verte.png" id="revenirAuSommaire" title="Page d'Accueil" onclick="revenir_sommaire_via_mettreEnFavoris()" width="5%"/>
+
+  <br><br>
+
+  <h2 class="h2_question_fav">Comment mettre en favoris ?</h2>
+  	<h3 class="étape_mettreEnFavoris">1ère étape:</h3><p class="texteExplicatif">Tout d'abord cherchez l'icône de votre navigateur internet, puis cliquez dessus afin de l'ouvrir. Nous prendrons Google Chrome pour l'exercice. Son icône est la suivante:</p><img src="chrome.png" style="margin-left: 16%; width: 3%;"/><br><br>
+    <h3 class="étape_mettreEnFavoris">2ème étape:</h3><p class="texteExplicatif">Cherchez votre page internet que vous voudrez mettre en favoris. Faites la recherche à l'aide de votre barre de recherche. Tapez votre recherche grâce à votre clavier. Cette barre est comme ci-contre:</p><center><img src="barreDeRecherche.png"/></center><br><br>
+    <h3 class="étape_mettreEnFavoris">3ème étape:</h3><p class="texteExplicatif">Une fois votre page trouvée, dirigez vous vers la droite en haut de la page puis cherchez une icône en forme d'étoile puis cliquez dessus. Cette icône est comme ci-contre:<img src="etoileFavoris.png" alt="Icône pour mettre en favoris"/> Et voilà votre page internet est mise en favoris.</p><br>
+
+   <h2 class="h2_consigne"><u>Consignes de l'exercice:</u></h2>
+
+        <p class='texteExplicatif'><i>Vous désirez garder en mémoire un site de cuisine qui rassemble toutes les recettes possibles et imaginables: Marmiton. Pour cela, vous allez devoir mettre en favoris ce site, en tenant compte des indications et de la vidéo présentés ci-dessus. Vous commencez cet exercice en considérant que vous ayez déja tapé et recherché Marmiton sur Google. Si vous ne vous souvenez plus comment faire <b class="gras"><span id="redirectionVersRechercheGoogle_via_mettreEnFavoris" onclick="redirectionVersRechercheGoogleViaMettreEnFavoris()">cliquez ici</span></b>. Bonne chance ! &#9786; </i></p>
+
+<h2 class="h2_video"><u>Voici un résumé en vidéo:</u></h2><br>
+
+   <video controls width="60%">
+    <source src="favorisOk.mp4" type="video/mp4"/>
+   </video>
+
+    <br><br><br><br>
+
+   <center><span id="zoneAffichageMondeVirtuel">
+   		<div id="map22Bureau">
+            <img usemap="#maMap22" src="recherchesMarmiton.png" alt="Photo de la recherche Marmiton" id="map22_Bureau"/>
+            <map id="maMap22">
+                <area shape="rect" coords="121,224,523,237" id="zone_aCliquerPourMarmiton" onclick="afficherMarmiton()"/>
+            </map>
+        </div>
+        <div id="map23Bureau">
+            <img usemap="#maMap23" src="marmitonAffiche.png" alt="Photo du site Marmiton ouvert" id="map23_Bureau"/>
+            <map id="maMap23">
+                <area shape="rect" coords="943,34,966,57" id="zone_aCliquerPourMettreFavoris" onclick="afficher_marmitonEnFavoris()"/>
+            </map>
+        </div>
+   </span></center><br>
+
+   <input type="button" id="recommencerExercices" value="Recommencer l'exercice" class="boutonsBasDePages"/>
+
+   <input type="button" id="MettreFavoris_accomplie" class="boutonsBasDePages" value="J'ai lu l'ensemble du tutoriel, je passe à la suite" onclick="revenir_sommaire_via_bouton_mettreEnFavoris()"/>
+
+</div>
+
+<!-- Partie Javascript --------------------------------------- -->
+
+  <script type="text/javascript">
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+/////////////////partie Ouvrir Bibliothèque/////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+document.getElementById('map2Bureau').style.display="none";
+
+function revenir_sommaire_via_ouvrirBibliothèque() {
+  	document.getElementById("sommaire").style.display="block"; //on affiche le sommaire
+  	document.getElementById("charger_OuvrirBibliothèque").style.display="none"; //on masque la page Ouvrir la bibliothèque
+}
+
+function revenir_sommaire_via_bouton_ouvrirBibliothèque() {
+	document.getElementById("sommaire").style.display="block"; //on affiche le sommaire
+  	document.getElementById("charger_OuvrirBibliothèque").style.display="none"; //on masque la page Ouvrir la bibliothèque
+  	document.getElementById('capable_de_accéderBibliothèque').style.backgroundColor="#00e1c0";
+  	document.getElementById('checkVert_accéderBibliothèque').innerHTML="<img src='Check-vert.png' width='80%'/>";
+}
+
+function redirectionVersOuvrirBibliothèqueViaChangerFondEcran() {
+  document.getElementById("charger_ChangerFondEcran").style.display="none"; //on masque la page Changer Fond Ecran
+  document.getElementById("charger_OuvrirBibliothèque").style.display="block"; //on affiche page Ouvrir la Bibliothèque
+}
+
+function onAfficheOuvrirBibliothèque() {
+  document.getElementById("sommaire").style.display="none"; //on masque le sommaire
+  document.getElementById("charger_OuvrirBibliothèque").style.display="block"; //on affiche page Ouvrir la bibliothèque
+}
+
+
+
+//////afficher la bibliothèque//////////////////////////////////////////////////
+function afficherBibliothèque() {
+	//var coordonnées = "438,573,463,595";
+	//if(coordonnéesCliquées != coordonnées){ alert('Oups, ca n\'est pas ici qu'il faut cliquer'); }
+		document.getElementById('map2Bureau').style.display="none";
+		document.getElementById('map1Bureau').innerHTML="<div id='map2Bureau'><img usemap='#maMap2' src='bibliothèqueAffichee.png' alt='Photo du dossier Images affiché' id='map2_Bureau'/><map id='maMap2'><area shape='rect' coords='405,230,483,261' id='zone_aCliquerPourAfficherDossierImages' onclick='afficherDossierImages()'/></map></div>";
+}
+
+//////afficher le dossier Images////////////////////////////////////////////////
+function afficherDossierImages() {
+	document.getElementById('map2Bureau').style.display="block";
+	document.getElementById('map1Bureau').style.display="none";
+	document.getElementById('zoneAffichageMondeVirtuel').innerHTML="<img src='dossierImagesAffiche.png' id='dossier_Images_afiché'/>";
+
+	alert('Bravo ! \n Vous avez réussi !');  //on montre par un alert() que l'utilisateur a réussi l'exercice
+
+	var demanderQuitterOuNon = confirm('Voulez-vous revenir à la page d\'accueil ?');
+	if(demanderQuitterOuNon){   //si l'utilisateur veut quitter la page alors:
+        document.getElementById("sommaire").style.display="block"; //on affiche le sommaire
+        document.getElementById("charger_OuvrirBibliothèque").style.display="none"; //on masque la page Ouvrir Bibliothèque
+        document.getElementById('capable_de_accéderBibliothèque').style.backgroundColor="#00e1c0";
+        document.getElementById('checkVert_accéderBibliothèque').innerHTML="<img src='Check-vert.png' width='80%'/>";
+	}
+
+}
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////partie Changer Fond Ecran///////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+function onAfficheChangerFondEcran() {
+  document.getElementById("sommaire").style.display="none"; //on masque le sommaire
+  document.getElementById("charger_ChangerFondEcran").style.display="block"; //on affiche page Changer le fond d'écran
+}
+
+function revenir_sommaire_via_changerFondEcran() {
+  document.getElementById("sommaire").style.display="block"; //on affiche le sommaire
+  document.getElementById("charger_ChangerFondEcran").style.display="none"; //on masque la page Changer le fond d'écran
+}
+
+function revenir_sommaire_via_bouton_changerFondEcran() {
+  document.getElementById("sommaire").style.display="block"; //on affiche le sommaire
+  document.getElementById("charger_ChangerFondEcran").style.display="none"; //on masque la page Changer le fond d'écran
+  document.getElementById('savoirChangerFondEcran').style.backgroundColor="#00e1c0";
+  document.getElementById('checkVert_changerFondEcran').innerHTML="<img src='Check-vert.png' width='80%'/>";
+}
+
+//////afficher l'accueil////////////////////////////////////////////////////////
+function afficherAccueil() {
+  document.getElementById('map0Bureau').innerHTML="<div id='map3Bureau'><img usemap='#maMap3' src='accueilAffiche.png' alt='Photo du l'accueil affiché' id='map3_Bureau'/><map id='maMap3'><area shape='rect' coords='11,505,29,519' id='zone_aCliquerPourAfficherParamètre1' onclick='afficherParamètre1()'/></map></div>";
+  document.getElementById('map3Bureau').style.display="block";
+}
+
+//////afficher paramètre1///////////////////////////////////////////////////////
+function afficherParamètre1() {
+  document.getElementById('map3Bureau').innerHTML="<div id='map4Bureau'><img usemap='#maMap4' src='paramètre1Affiche.png' alt='Photo des paramètres1 affiché' id='map4_Bureau'/><map id='maMap4'><area shape='rect' coords='48,319,336,360' id='zone_aCliquerPourAfficherParamètre2' onclick='afficherParamètre2()'/></map></div>";
+  document.getElementById('map4Bureau').style.display="block";
+}
+
+//////afficher paramètre2///////////////////////////////////////////////////////
+function afficherParamètre2() {
+  document.getElementById('map4Bureau').innerHTML="<div id='map5Bureau'><img usemap='#maMap5' src='paramètre2Affiche.png' alt='Photo des paramètres2 affiché' id='map5_Bureau'/><map id='maMap5'><area shape='rect' coords='57,186,165,203' id='zone_aCliquerPourAfficherParamètre3' onclick='afficherParamètre3()'/></map></div>";
+  document.getElementById('map5Bureau').style.display="block";
+}
+
+//////afficher paramètre3///////////////////////////////////////////////////////
+function afficherParamètre3() {
+  document.getElementById('map6Bureau').style.display="block";
+  document.getElementById('map5Bureau').style.display="none";
+}
+
+//////afficher paramètre4///////////////////////////////////////////////////////
+function afficherParamètre4() {
+  document.getElementById('map6Bureau').innerHTML="<img src='paramètre4Affiche.png' id='PARAMETRE4'/>";
+  alert('Bravo ! \n Vous avez réussi !');  //on montre par un alert() que l'utilisateur a réussi l'exercice
+
+  var demanderQuitterOuNon = confirm('Voulez-vous revenir à la page d\'accueil ?');
+	if(demanderQuitterOuNon){   //si l'utilisateur veut quitter la page alors:
+        document.getElementById("sommaire").style.display="block"; //on affiche le sommaire
+        document.getElementById("charger_ChangerFondEcran").style.display="none"; //on masque la page Changer Fond Ecran
+        document.getElementById('savoirChangerFondEcran').style.backgroundColor="#00e1c0";
+        document.getElementById('checkVert_changerFondEcran').innerHTML="<img src='Check-vert.png' width='80%'/>";
+	}
+}
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//////////////partie Supprimer un élèment///////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+function onAfficheSupprimerElement() {
+    document.getElementById("sommaire").style.display="none"; //on masque le sommaire
+    document.getElementById("charger_SupprimerUnElement").style.display="block"; //on affiche page Supprimer un élèment
+}
+
+function revenir_sommaire_via_supprimerElement() {
+  document.getElementById("sommaire").style.display="block"; //on affiche le sommaire
+  document.getElementById("charger_SupprimerUnElement").style.display="none"; //on masque la page Supprimer un élèment
+}
+
+function revenir_sommaire_via_bouton_supprimerElement() {
+  document.getElementById("sommaire").style.display="block"; //on affiche le sommaire
+  document.getElementById("charger_SupprimerUnElement").style.display="none"; //on masque la page Supprimer un élèment
+  document.getElementById('choisirSupprimerElement').style.backgroundColor="#00e1c0";
+  document.getElementById('checkVert_supprimerElement').innerHTML="<img src='Check-vert.png' width='80%'/>";
+}
+
+function redirectionVersOuvrirBibliothèqueViaSupprimerElement() {
+    document.getElementById("charger_SupprimerUnElement").style.display="none"; //on masque la page Supprimer un élèment
+    document.getElementById("charger_OuvrirBibliothèque").style.display="block"; //on affiche page Ouvrir la Bibliothèque
+}
+
+//////afficher la bibliothèque//////////////////////////////////////////////////
+function afficherBibliothèque_supprimer_élèment() {
+    document.getElementById('map9Bureau').innerHTML="<div id='map10Bureau'><img usemap='#maMap10' src='bibliothèqueAffichee.png' alt='Photo de la Bibliothèque' id='map10_Bureau'/><map id='maMap10'><area shape='rect' coords='591,188,683,219' id='zone_aCliquerPourDossierDocuments_supprimerelement' onclick='afficherDossierDocuments_supprimer_élèment()'/></map></div>";
+    document.getElementById('map10Bureau').style.display="block";
+}
+
+//////afficher dossier Documents////////////////////////////////////////////////
+function afficherDossierDocuments_supprimer_élèment() {
+    document.getElementById('map10Bureau').innerHTML="<div id='map11Bureau'><img usemap='#maMap11' src='dossierDocumentsAffiche.png' alt='Photo de l\'intérieur dossier Documents' id='map11_Bureau'/><map id='maMap11'><area shape='rect' coords='265,211,363,224' id='zone_aCliquerPourDocuments' onclick='afficherCliqueDroit_Documents()'/></map></div>";
+    document.getElementById('map11Bureau').style.display="block";
+}
+
+//////afficher fenêtre supprimmer///////////////////////////////////////////////
+function afficherCliqueDroit_Documents() {
+	document.getElementById('map11Bureau').innerHTML="<div id='map12Bureau'><img usemap='#maMap12' src='interieurDossierDocuments_cliqueDroit.png' alt='Photo de l'intérieur dossier Documents' id='map12_Bureau'/><map id='maMap12'><area shape='rect' coords='264,486,524,502' id='zone_aCliquerPourFermerBibliothèque' onclick='afficherFermerCliqueDroit_Supprimer()'/></map></div>";
+        document.getElementById('map12Bureau').style.display="block";
+}
+
+//////afficher fermer le clique droit///////////////////////////////////////////
+function afficherFermerCliqueDroit_Supprimer() {
+    document.getElementById('map12Bureau').innerHTML="<div id='map13Bureau'><img usemap='#maMap13' src='fichier_ChoixPortables_supprime.png' alt='Photo de l'intérieur du dossier Documents' id='map13_Bureau'/><map id='maMap13'><area shape='rect' coords='797,4,838,20' id='zone_aCliquerPourAfficherInterieurDossierDocuments' onclick='afficherFermerBibliothèque()'/></map></div>";
+    document.getElementById('map13Bureau').style.display="block";
+}
+
+//////afficher fermer la bibliothèque////////////////////////////////////////////
+function afficherFermerBibliothèque() {
+	document.getElementById('map13Bureau').innerHTML="<div id='map14Bureau'><img usemap='#maMap14' src='map14_Bureau.png' alt='Photo du Bureau avec Corbeille pleine' id='map14_Bureau'/><map id='maMap14'><area shape='rect' coords='10,9,72,67' id='zone_aCliquerPourAfficherViderCorbeille' onclick='afficherOuvrirViderLaCorbeille()'/></map></div>";
+	document.getElementById('map14Bureau').style.display="block";
+}
+
+//////afficher ouvrir vider la corbeille/////////////////////////////////////////
+function afficherOuvrirViderLaCorbeille() {
+	document.getElementById('map14Bureau').innerHTML="<div id='map15Bureau'><img usemap='#maMap15' src='viderLaCorbeille.png' alt='Photo du Bureau avec Vider la Corbeille' id='map15_Bureau'/><map id='maMap15'><area shape='rect' coords='39,76,284,91' id='zone_aCliquerPourAfficherVoulezVousViderCorbeille' onclick='afficherOuvrirQuestionConfirmationsSuppression_Corbeille()'/></map></div>";
+	document.getElementById('map15Bureau').style.display="block";
+}
+
+//////afficher confirmation vider la corbeille///////////////////////////////////
+function afficherOuvrirQuestionConfirmationsSuppression_Corbeille() {
+	document.getElementById('map15Bureau').innerHTML="<div id='map16Bureau'><img usemap='#maMap16' src='confirmation_SupprimerFichierOuNon.png' alt='Photo du bureau avec voulez-vous vider la corbeille' id='map16_Bureau'/><map id='maMap16'><area shape='rect' coords='530,356,603,378' id='zone_aCliquerPourAfficherCorbeilleVidee' onclick='afficherBureauMap16()'/></map></div>";
+	document.getElementById('map16Bureau').style.display="block";
+}
+
+//////afficher rétablissement apparition bureau normal//////////////////////////
+function afficherBureauMap16() {
+    document.getElementById('map15Bureau').style.display="none";
+    document.getElementById('map16Bureau').style.display="block";
+    document.getElementById('zoneAffichageMondeVirtuel').innerHTML="<img src='map1_Bureau.png' id='dernièreMapAAfficher'/>";
+
+    alert('Bravo ! \n Vous avez réussi !');  //on montre par un alert() que l'utilisateur a réussi l'exercice
+
+    var demanderQuitterOuNon = confirm('Voulez-vous revenir à la page d\'accueil ?');
+    if(demanderQuitterOuNon){   //si l'utilisateur veut quitter la page alors:
+        document.getElementById("sommaire").style.display="block"; //on affiche le sommaire
+        document.getElementById("charger_SupprimerUnElement").style.display="none"; //on masque la page Supprimer Element
+        document.getElementById('choisirSupprimerElement').style.backgroundColor="#00e1c0";
+        document.getElementById('checkVert_supprimerElement').innerHTML="<img src='Check-vert.png' width='80%'/>";
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//////////////partie Augmenter le son///////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+function onAfficheAugmenterSon() {
+    document.getElementById("sommaire").style.display="none"; //on masque le sommaire
+    document.getElementById("charger_AugmenterLeSon").style.display="block"; //on affiche page Augmenter le son
+}
+
+function revenir_sommaire_via_augmenterSon() {
+    document.getElementById("sommaire").style.display="block"; //on affiche le sommaire
+    document.getElementById("charger_AugmenterLeSon").style.display="none"; //on masque la page Augmenter le son
+}
+
+function revenir_sommaire_via_bouton_augmenterSon() {
+    document.getElementById("sommaire").style.display="block"; //on affiche le sommaire
+    document.getElementById("charger_AugmenterLeSon").style.display="none"; //on masque la page Augmenter le son
+    document.getElementById('pouvoirAugmenterSon').style.backgroundColor="#00e1c0";
+    document.getElementById('checkVert_augmenterSon').innerHTML="<img src='Check-vert.png' width='80%'/>";
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//////////////partie naviguer dans Gmail////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+function onAfficheNaviguerGmail() {
+  document.getElementById("sommaire").style.display="none"; //on masque le sommaire
+  document.getElementById("charger_navigationGmail").style.display="block"; //on affiche page Naviguer dans Gmail
+}
+
+function revenir_sommaire_via_navigationGmail() {
+    document.getElementById("sommaire").style.display="block"; //on affiche le sommaire
+    document.getElementById("charger_AugmenterLeSon").style.display="none"; //on masque la page Augmenter le son
+    document.getElementById("charger_navigationGmail").style.display="none"; //on masque la page Navigation Gmail
+}
+
+
+function revenir_sommaire_via_bouton_naviguerGmail() {
+
+  document.getElementById("sommaire").style.display="block"; //on affiche le sommaire
+  document.getElementById("charger_navigationGmail").style.display="none"; //on masque la page Naviguer dans le Gmail
+  document.getElementById('savoirManierGmail0').style.backgroundColor="#00e1c0";
+  document.getElementById('savoirManierGmail1').style.backgroundColor="#00e1c0";
+  document.getElementById('savoirManierGmail2').style.backgroundColor="#00e1c0";
+  document.getElementById('checkVert_naviguerGmail0').innerHTML="<img src='Check-vert.png' width='80%'/>";
+  document.getElementById('checkVert_naviguerGmail1').innerHTML="<img src='Check-vert.png' width='80%'/>";
+  document.getElementById('checkVert_naviguerGmail2').innerHTML="<img src='Check-vert.png' width='80%'/>";
+}
+
+//////afficher clique droit°1///////////////////////////////////////////////////////////
+function afficher_CliqueDroit1() {
+  document.getElementById('map17Bureau').innerHTML="<div id='map18Bureau'><img usemap='#maMap18' src='cliqueDroit1_DeplacerMail.png' alt='Photo avec clique droit affiché' id='map18_Bureau'/><map id='maMap18'><area shape='rect' coords='280,250,454,273' id='zone_aCliquerPourVoirCliqueDroit1' onclick='afficher_CliqueDroit2()'/></map></div>";
+  document.getElementById('map18Bureau').style.display="block";
+}
+
+//////afficher clique droit°2///////////////////////////////////////////////////////////
+function afficher_CliqueDroit2() {
+	document.getElementById('map18Bureau').innerHTML="<div id='map19Bureau'><img usemap='#maMap19' src='cliqueDroit2_DeplacerMail.png' alt='Photo avec deuxième clique droit à effectuer' id='map19_Bureau'/><map id='maMap19'><area shape='rect' coords='451,262,603,276' id='zone_aCliquerPourVoirCliqueDroit2' onclick='afficher_CliqueDroit3()'/></map></div>";
+        document.getElementById('map19Bureau').style.display="block";
+}
+
+//////afficher clique droit°3///////////////////////////////////////////////////////////
+function afficher_CliqueDroit3() {
+	document.getElementById('map19Bureau').innerHTML="<img src='mailDéplacé.png' id='mail_déplacé'/>";
+
+	alert('Bravo ! \n Vous avez réussi !');  //on montre par un alert() que l'utilisateur a réussi l'exercice
+
+    var demanderQuitterOuNon = confirm('Voulez-vous revenir à la page d\'accueil ?');
+    if(demanderQuitterOuNon){   //si l'utilisateur veut quitter la page alors:
+        document.getElementById("sommaire").style.display="block"; //on affiche le sommaire
+        document.getElementById("charger_navigationGmail").style.display="none"; //on masque la page Navigation Gmail
+        document.getElementById('savoirManierGmail0').style.backgroundColor="#00e1c0";
+  		document.getElementById('savoirManierGmail1').style.backgroundColor="#00e1c0";
+  		document.getElementById('savoirManierGmail2').style.backgroundColor="#00e1c0";
+        document.getElementById('checkVert_naviguerGmail0').innerHTML="<img src='Check-vert.png' width='80%'/>";
+        document.getElementById('checkVert_naviguerGmail1').innerHTML="<img src='Check-vert.png' width='80%'/>";
+        document.getElementById('checkVert_naviguerGmail2').innerHTML="<img src='Check-vert.png' width='80%'/>";
+    }
+
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//////////////partie Créer Adresse Mail/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function onAfficheCréerAdresseMail() {
+	document.getElementById("sommaire").style.display="none"; //on masque le sommaire
+  	document.getElementById("charger_créerAdresseMail").style.display="block"; //on affiche page créer adresse mail
+}
+
+function revenir_sommaire_via_créerAdresseMail() {
+	document.getElementById("sommaire").style.display="block"; //on affiche le sommaire
+  	document.getElementById("charger_créerAdresseMail").style.display="none"; //on masque la page créer adresse mail
+}
+
+function revenir_sommaire_via_bouton_créerAdresseMail() {
+	document.getElementById("sommaire").style.display="block"; //on affiche le sommaire
+    document.getElementById("charger_créerAdresseMail").style.display="none"; //on masque la page créer adresse mail
+    document.getElementById('capable_de_créerAdresseMail').style.backgroundColor="#00e1c0";
+    document.getElementById('checkVert_créerAdresseMail').innerHTML="<img src='Check-vert.png' width='80%'/>";
+}
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////
+///////////////partie Effectuer une recherche Google/////////////////////////////////////////////////////////////////////////////////////////////////
+
+function onAfficheEffectuerRechercheGoogle() {
+	document.getElementById('sommaire').style.display="none"; //on masque le sommaire
+	document.getElementById('faire_UneRechercheGoogle').style.display="block";
+	//on affiche page effectuer une recherche
+}
+
+function redirectionVersRechercheGoogleViaMettreEnFavoris() {
+	document.getElementById("mettre_EnFavoris").style.display="none"; //on masque la page Mettre en Favoris
+  document.getElementById("faire_UneRechercheGoogle").style.display="block"; //on affiche page Effectuer une recherche Google
+}
+
+function revenir_sommaire_via_EffectuerRechercheGoogle() {
+	document.getElementById('faire_UneRechercheGoogle').style.display="none";
+	document.getElementById('sommaire').style.display="block";
+}
+
+function revenir_sommaire_via_bouton_effectuerRechercheGoogle() {
+  document.getElementById("sommaire").style.display="block"; //on affiche le sommaire
+  document.getElementById("faire_UneRechercheGoogle").style.display="none"; //on masque la page Effectuer une recherche Google
+  document.getElementById('savoirSurferWeb').style.backgroundColor="#00e1c0";
+  document.getElementById('checkVert_rechercheGoogle').innerHTML="<img src='Check-vert.png' width='80%'/>";
+}
+
+function afficherGoogle_map21() {
+	document.getElementById('map20Bureau').innerHTML="<div id='map21Bureau'><img src='barreHautGoogle.png' id='image_barreRecherche_hautPage'/><img src='Google.png' id='logoGoogle'/><input type='text' id='barreGoogle_Gmail'/><img src='basGoogle.png' id='image_barreIconesBas'/></div>";
+	document.getElementById('map21Bureau').style.display="block";
+
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////
+///////////////partie Mettre en Favoris/////////////////////////////////////////////////////////////////////////////////////////////////
+
+function onAfficheMettreEnFavoris() {
+	document.getElementById('sommaire').style.display="none"; //on masque le sommaire
+	document.getElementById('mettre_EnFavoris').style.display="block";
+	//on affiche page mettre en favoris
+}
+
+function revenir_sommaire_via_mettreEnFavoris() {
+	document.getElementById('mettre_EnFavoris').style.display="none";
+	document.getElementById('sommaire').style.display="block";
+}
+
+function revenir_sommaire_via_bouton_mettreEnFavoris() {
+  document.getElementById('mettre_EnFavoris').style.display="none";
+  document.getElementById('sommaire').style.display="block";
+  document.getElementById('checkVert_mettreFavoris').innerHTML="<img src='Check-vert.png' width='80%'/>";
+  document.getElementById('pouvoirMettreFavoris').style.backgroundColor="#00e1c0";
+}
+
+///////afficher site Marmiton///////////////////////////////////////////////////////////////////
+
+function afficherMarmiton() {
+	document.getElementById('map22Bureau').innerHTML="<div id='map23Bureau'><img usemap='#maMap23' src='marmitonAffiche.png' alt='Photo du site Marmiton ouvert' id='map23_Bureau'/><map id='maMap23'><area shape='rect' coords='943,34,966,57' id='zone_aCliquerPourMettreFavoris' onclick='afficher_marmitonEnFavoris()'/></map></div>";
+	document.getElementById('map23Bureau').style.display="block";
+}
+
+//////afficher Marmiton mis en favoris////////////////////////////////////////////////////////////////////
+
+function afficher_marmitonEnFavoris() {
+	document.getElementById('map23Bureau').innerHTML="<img src='marmiton_misEnFavoris.png' id='marmitonEnFavoris'/>";
+
+
+	alert('Bravo ! \n Vous avez réussi !');  //on montre par un alert() que l'utilisateur a réussi l'exercice
+
+	var demanderQuitterOuNon = confirm('Voulez-vous revenir à la page d\'accueil ?');
+	if(demanderQuitterOuNon){   //si l'utilisateur veut quitter la page alors:
+        document.getElementById("sommaire").style.display="block"; //on affiche le sommaire
+        document.getElementById("mettre_EnFavoris").style.display="none"; //on masque la page Mettre en Favoris
+        document.getElementById('checkVert_mettreFavoris').innerHTML="<img src='Check-vert.png' width='80%'/>";
+        document.getElementById('pouvoirMettreFavoris').style.backgroundColor="#00e1c0";
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+///function pour afficher les félicitations à l'utilisateur s'il a réussi et consulté toutes les tâches////////////////////////////////
+
+function afficherLesGifsDeFelicitations() {
+	document.getElementById('gif_Félicitations').style.display="block";
+	document.getElementById('gif_Bravo').style.display="block";
+	document.getElementById('bouton_ToutTerminé_Sommaire').style.display="none";
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+
+function RecommencerExercices_OuvrirBibliothèque() {
+
+}
+
+function RecommencerExercices_ChangerFondDEcran() {
+
+}
+
+function RecommencerExercices_SupprimerElements() {
+
+}
+
+function RecommencerExercices_AugmenterSon() {
+
+}
+
+function RecommencerExercices_NaviguerGmail() {
+
+}
+
+function RecommencerExercices_CréerAdresseMail() {
+
+}
+
+function RecommencerExercices_EffectuerRechercheGoogle() {
+
+}
+
+function RecommencerExercices_MettreFavoris() {
+
+}
+
+  </script>
+</body>
+<html>

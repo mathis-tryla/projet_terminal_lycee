@@ -1,0 +1,237 @@
+		body{
+    		background-image: url('images/fondEcran_accueil.png');
+      		font-family: Arial Unicode MS;
+      	}
+
+    	.texteExplicatif{
+			margin-left:2%;
+			margin-right:4%;
+			font-family:'Skranji', sans-serif;
+			font-size:20;
+		}
+
+		.gras{
+			color:#FF7600;
+		}
+
+    	#charger_OuvrirBibliothèque, #charger_ChangerFondEcran, #charger_SupprimerUnElement, #charger_AugmenterLeSon, #charger_créerAdresseMail, #charger_navigationGmail, #mettre_EnFavoris, #faire_UneRechercheGoogle, #map3Bureau, #map4Bureau, #map5Bureau, #map6Bureau, #map7Bureau, #map10Bureau, #map11Bureau, #map12Bureau, #map13Bureau, #map14Bureau, #map15Bureau, #map16Bureau, #map18Bureau, #map19Bureau, #map21Bureau, #map23Bureau{
+      		display: none;
+    	}
+
+    	#charger_OuvrirBibliothèque, #charger_ChangerFondEcran, #charger_SupprimerUnElement, #charger_AugmenterLeSon, #charger_navigationGmail, #mettre_EnFavoris, #faire_UneRechercheGoogle, #charger_créerAdresseMail{
+			background-color:#FFF8E0;
+		}
+
+    	.étape_ouvrirBibliothèque, .étape_changerFondEcran, .étape_augmenterSon, .étape_supprimerElement, .étape_naviguerGmail, .étape_mettreEnFavoris{
+    		margin-left: 2%;
+    		margin-left: 5%;
+			text-decoration: underline dotted;
+			color:#107F0F;
+    	}
+
+    .h2_sommaire{
+			color:orange;
+			font-size: 160%;
+			position: absolute;
+      text-shadow: 2px 2px 2px black;
+		}
+
+		.h2_consigne{
+			margin-left:35%;
+			color:#DB3B26;
+			text-decoration: underline double ;
+		}
+
+		.h2_video{
+			margin-left:25%;
+			color:#C13B8A
+		}
+
+
+		.h2_question_bibliotheque, .h2_question_ecran,.h2_question_suppr,.h2_question_aug,.h2_question_gmail,.h2_question_adresse,.h2_question_google, .h2_question_fav{
+			margin-left:10%;
+			text-decoration: underline ;
+			color:#CD2D27;
+		}
+
+    	.sommaire_INFORMATIQUE{
+    		border: 3px solid black;
+    		font-family: Comic sans ms;
+      		border-radius: 10%;
+      		height: 14%;
+      		width: 15%;
+      		color: #29DA00;
+      		font-size: 160%;
+      		margin-left: 30%;
+      		padding: 0% 1% 4% 1%;
+      		background-image: url('images/bodyBackground.png');
+      		background-repeat: no-repeat;
+    	}
+
+    	.sommaire_FACILE{
+    		border: 3px solid black;
+    		font-family: Comic sans ms;
+      		border-radius: 10%;
+      		height: 6%;
+      		width: 7%;
+      		color: #29DA00;
+      		font-size: 110%;
+      		margin-left: 50%;
+      		padding: 4% 1% 4% 9%;
+      		background-image: url('images/bodyBackground.png');
+      		background-repeat: no-repeat;
+    	}
+
+    	h1{
+    		border: 3px solid black;
+      		border-radius: 10%;
+    		margin: 2% 30% 0% 30%;
+      		padding: 1% 1% 1% 1%;
+      		max-width: 25%;
+
+    	}
+ #titre_tableau_bases, #titre_tableau_mail, #titre_tableau_internet{
+ color:#6A0EE2;
+ text-decoration: underline;
+ }
+
+
+    	#recommencerExercices{
+		    float: left;
+		    position: absolute;
+		    right: 55%;
+    	}
+
+    	#ouvrirBibliothèque_accomplie, #changerFondEcran_accomplie, #supprimerElement_accomplie, #navigationGmail_accomplie, #faireRechercheGoogle_accomplie, #MettreFavoris_accomplie{
+		    position: absolute;
+		    left: 55%;
+    	}
+
+    	#barreGoogle_Gmail{
+	    	height: 3%;
+	    	width: 30%;
+	    	position: absolute;
+	    	top: 173%;
+	    	left: 20%;
+    	}
+
+    	#logoGoogle{
+	    	margin-left: 25%;
+	    	width: 20%;
+    	}
+
+    	#image_barreRecherche_hautPage, #image_barreIconesBas{
+    		margin-left: 2%;
+    	}
+
+    	a{
+      		text-decoration: none;
+      		color: black;
+    	}
+
+    	#revenirAuSommaire{
+    		margin-left: 3%;
+        cursor: pointer;
+    	}
+
+    	#capable_de_accéderBibliothèque, #savoirChangerFondEcran, #choisirSupprimerElement, #pouvoirAugmenterSon, #savoirManierGmail0, #savoirManierGmail1, #savoirManierGmail2, #capable_de_créerAdresseMail, #savoirSurferWeb, #pouvoirMettreFavoris, #checkVert_accéderBibliothèque, #checkVert_changerFondEcran, #checkVert_supprimerElement, #checkVert_augmenterSon, #checkVert_naviguerGmail0, #checkVert_naviguerGmail1, #checkVert_naviguerGmail2, #checkVert_créerAdresseMail, #checkVert_rechercheGoogle, #checkVert_mettreFavoris{
+		    border: 2px solid black;
+		    font-size: 80%;
+		    padding-left: 2%;
+		    background-color: white;
+    	}
+
+		#tâches{
+	        border: 1px ridge black;
+	        border-radius: 5%;
+	      	width: 440px;
+	      	padding-top: 2%;
+	      	padding-bottom: 2%;
+	        background-color: #4085A4;
+          display: block;
+    	}
+
+    	#tâches:hover{
+    		background-color: rgba(64,133,164,0.80);
+    	}
+
+    	.td_icones{
+    		border: 3px ridge black;
+	        border-radius: 5%;
+	      	width: 440px;
+	      	padding-top: 2%;
+	      	padding-bottom: 2%;
+    		background-color: white;
+    	}
+
+    	.mettreEnPoliceTaches:hover{
+      		font-weight: bold;
+          cursor: pointer;
+    	}
+
+    	.tâches_en_hover{
+	        color: white;
+    	}
+
+    	#tableauTâches_bordures{
+	    	position: absolute;
+	    	left: 8%;
+	    	right: 10%;
+	    	top: 100%;
+    	}
+
+    	#tableauCompétences_bordures{
+    		position: absolute;
+    		top: 180%;
+    		left: 35%;
+    		font-size: 120%;
+    		border-collapse: collapse;
+    	}
+
+    	.texteIntro{
+      		margin: 0% 2% 0% 2%;
+      		font-size: 120%;
+      		color: white;
+    	}
+
+    	#gif_Bravo{
+    		position: absolute;
+    		top: 180%;
+    		left: 10%;
+    		display: none;
+    	}
+
+    	#gif_Félicitations{
+    		position: absolute;
+    		top: 175%;
+    		right: 10%;
+    		display: none;
+    	}
+
+    	video{
+    		margin-left: 2%;
+    	}
+
+    	#bouton_ToutTerminé_Sommaire{
+    		position: absolute;
+    		left: 50%;
+    		top: 150%;
+    		font-family: Comic sans ms;
+    		font-size: 90%;
+    		border: 2px double black;
+    		height: 7%;
+        cursor: pointer;
+    	}
+
+      #bouton_ToutTerminé_Sommaire:hover{
+        font-weight: bold;
+      }
+
+    	.boutonsBasDePages{
+    		font-family: Arial Unicode MS;
+    		font-size: 90%;
+    		font-weight: bold;
+    		background-color: #FFF8E0;
+    		color:#DB3B26;
+    		border: 3px ridge #DB3B26;
+    	}
